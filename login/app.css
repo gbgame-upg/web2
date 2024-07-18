@@ -1,0 +1,145 @@
+/* css reset */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #2979ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "DM Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 16px;
+}
+.login {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+.login__heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.login__field {
+  padding: 0 8px;
+  height: 48px;
+  background-color: #f6f8f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+}
+.login__field:has(input:focus) {
+  background-color: transparent;
+  border-color: var(--primary-color);
+}
+.login__icon {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 8px;
+  color: var(--primary-color);
+}
+.login__input {
+  flex: 1;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding-left: 8px;
+}
+.login__forgot {
+  color: var(--primary-color);
+  font-weight: 600;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  text-decoration: none;
+}
+.login__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+}
+.login__submit:hover {
+  opacity: 0.85;
+}
+.login__or {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.login__line {
+  flex: 1;
+  background-color: #eee;
+  height: 1px;
+}
+.login__or-text {
+  display: inline-block;
+  padding: 8px;
+  background-color: white;
+}
+.login__social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.login__social-item {
+  height: 48px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
